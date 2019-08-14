@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<layout>
+<!--
+Customer account home dashboard layout
+-->
+	
+	<customer_account>
+        <reference name="customer_account_navigation">
+            <action method="addLink" ifconfig="ticketsupport/ticketsupport/enable_ticket" translate="label" module="customer"><name>ticketsupport</name><path>ticketsupport/index/index</path><label>Create Tickets</label></action>
+			
+            <action method="addLink"  ifconfig="ticketsupport/ticketsupport/enable_ticket" translate="label" module="customer"><name>createticketsupport</name><path>ticketsupport/index/tickets</path><label>Tickets</label></action>
+        </reference>
+    </customer_account>
+	
+	<imedia_ticketsupport_index_index>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="customer/account_dashboard" name="customer.account.link.create">
+				<action method="setTemplate" ifconfig="ticketsupport/ticketsupport/enable_ticket"><template>imedia/im_ticket.phtml</template></action>
+			</block>
+        </reference>
+    </imedia_ticketsupport_index_index>
+	
+	<imedia_ticketsupport_index_tickets>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="imedia_ticketsupport/tickets" name="customer.account.link.tickets">
+			<action method="setTemplate" ifconfig="ticketsupport/ticketsupport/enable_ticket"><template>imedia/tickets.phtml</template></action>
+			</block>
+        </reference>
+    </imedia_ticketsupport_index_tickets>
+	
+	<imedia_ticketsupport_index_viewticket>
+        <update handle="customer_account"/>
+        <reference name="my.account.wrapper">
+            <block type="imedia_ticketsupport/viewticket" name="customer.account.link.viewticket" >
+			<action method="setTemplate" ifconfig="ticketsupport/ticketsupport/enable_ticket"><template>imedia/viewticket.phtml</template></action>
+			</block>
+        </reference>
+    </imedia_ticketsupport_index_viewticket>
+
+</layout>

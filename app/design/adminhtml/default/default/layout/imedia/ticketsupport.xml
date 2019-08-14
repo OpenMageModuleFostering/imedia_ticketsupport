@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<layout>
+    <adminhtml_support_index>
+        <reference name="content">
+            <block type="imedia_ticketsupport/adminhtml_support" name="imedia_ticketsupport_support" />
+        </reference>
+    </adminhtml_support_index>
+	<adminhtml_support_edit>
+		<reference name="head">
+            <action method="addCss"><name>ticketsupport.css</name></action>
+        </reference>
+    </adminhtml_support_edit>
+</layout>

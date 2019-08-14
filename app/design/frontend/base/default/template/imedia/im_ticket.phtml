@@ -1,0 +1,49 @@
+<form action="<?php echo $this->getUrl('ticketsupport/index/send'); ?>" method="post" id="form-validate" name="ticketsystem_form" enctype="multipart/form-data">
+  <input name="form_key" type="hidden" value="">
+  <div class="fieldset">
+    <h2 class="legend">Add New Ticket</h2>
+    <div class="form-list">
+      <label for="title" class="required">Title<em>*</em></label>
+      <div class="input-box">
+        <input type="text" name="ticket_subject" id="ticket_subject" title="Title" class="input-text required-entry">
+      </div>
+            <label for="department">Department</label>
+      <div class="input-box">
+        <select name="t_department_id" id="t_department_id" title="Department " class="input-text">
+		<?php 
+		$department = Mage::getStoreConfig('ticketsupport/ticketsupport/departments'); 
+		foreach(explode(',',$department) as $dept):
+		?>
+            <option value="<?php echo $dept; ?>"><?php echo $dept; ?></option>
+       <?php endforeach; ?>
+		</select>
+      </div>
+                  <label for="priority">Priority</label>
+      <div class="input-box">
+        <select name="t_priority_id" id="t_priority_id" title="Priority " class="input-text">
+		<?php
+		$priority = Mage::getStoreConfig('ticketsupport/ticketsupport/priority'); 
+		foreach(explode(',',$priority) as $Prty):
+		?>
+                    <option value="<?php echo $Prty; ?>"><?php echo $Prty; ?></option>
+		<?php endforeach; ?>
+        </select>
+      </div>
+            <label for="content" class="required">Message<em>*</em></label>
+      <div class="input-box">
+        <textarea name="content" id="content" title="Message" class="input-text required-entry" style="width:545px"></textarea>
+      </div>
+           
+          </div>
+    <input name="stores[]" id="stores[]" value="1" type="hidden">
+    <div class="buttons-set">
+      <p class="required">* Required Fields</p>
+      <button type="submit" title="Send" class="button"><span><span>Send</span></span></button>
+    </div>
+  </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var dataForm = new VarienForm('form-validate', true);
+//]]>
+</script> 

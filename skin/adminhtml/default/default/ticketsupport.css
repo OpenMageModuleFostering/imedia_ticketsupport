@@ -1,0 +1,134 @@
+body.adminhtml-support-edit .middle .page-title h1 {
+  border: 0;
+  text-align: left;
+}
+.page-title h1, .page-title h2, .product-name h1, .product-name .h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+  color: #636363;
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 3px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  }
+body.adminhtml-support-edit .middle .fieldset {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: left;
+  width: 100%;
+}
+body.adminhtml-support-edit .middle .fieldset h2 {
+	width:100%;
+	display:inline-block;
+}
+h2, .h2 {
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: #636363;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+ }
+ body, button, input, select, table, textarea {
+  font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+  color: #636363;
+  line-height: 1.5;
+}
+body.adminhtml-support-edit .middle {
+	font-size:14px;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.form-list td.label {
+  padding:0 !important;
+}
+.pager {
+  float: right;
+  overflow: hidden;
+  width:100%;
+  margin:10px 0;
+}
+.pager .count-container {
+	float:right;
+}
+.pager .count-container .amount, .pager .count-container .limiter {
+	display:inline-block;
+}
+.middle .data-table#ticket-table {
+	width:100%;
+	margin-top:5px;
+}
+.data-table th {
+  background: #f4f4f4;
+  text-transform: uppercase;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.data-table thead th, .data-table tbody td {
+	border-bottom:1px solid silver;
+}
+.data-table td, .data-table th {
+	padding: 10px;
+  vertical-align: top;
+}
+form .legend {
+  margin: 0;
+  margin-bottom: 10px;
+  color: #636363;
+  font-family: "Raleway", "Helvetica Neue", Verdana, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+  text-rendering: optimizeSpeed;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #ededed;
+  }
+.fieldset .required {
+	color: #636363 !important;
+    font-weight: 600 !important;
+	font-size:13px;
+}
+textarea {
+	padding:5px;
+	  min-height: 70px;
+	  width: 615px !important;
+}
+.buttons-set {
+  clear: both;
+  margin: 10px 0 0;
+  padding-top: 10px;
+  border-top: 1px solid #ededed;
+  text-align: right;
+ }
+.button-send {
+	width:34%;
+}
+.buttons-set .required  {
+	display: inline-block;
+   float: right;
+   color:#df280a !important;
+   line-height: 33px;
+}
+.buttons-set .button {
+	background:#3399cc;
+	padding: 7px 15px;
+	font-size: 13px;
+    font-weight: normal;
+	min-width: 140px;
+	border:0;
+	 color:#fff;
+}
+.buttons-set .back-link {
+	float:left;
+}

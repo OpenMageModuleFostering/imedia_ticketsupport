@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<config>
+    <menu>
+        <imedia_ticketsupport_support translate="title" module="imedia_ticketsupport">
+			<title>Ticket Support</title>
+			<sort_order>999</sort_order>
+			<children>
+				<adminhtml_support translate="title">
+					<title>Ticket Support</title>
+					<sort_order>1</sort_order>
+					<action>adminhtml/support</action>
+				</adminhtml_support>                       
+			</children>
+		</imedia_ticketsupport_support>
+	</menu>
+    <acl>
+        <resources>
+            <admin>
+                <children>
+					<imedia_ticketsupport_support translate="title" module="imedia_ticketsupport">
+						<title>Ticket Support</title>
+						<sort_order>999</sort_order>
+						<children>
+							<adminhtml_support translate="title">
+								<title>Ticket Support</title>
+								<sort_order>1</sort_order>
+							</adminhtml_support>                       
+						</children>
+					</imedia_ticketsupport_support>
+				</children>
+            </admin>
+        </resources>
+    </acl> 
+	<acl>
+		<resources>
+		<all>
+			<title>Allow Everything</title>
+		</all>
+		<admin>
+			<children>
+			   <system>
+				  <children>
+					 <config>
+						<children>
+						   <ticketsupport translate="title" module="imedia_ticketsupport">
+							  <title>Ticket Support</title>							 
+						   </ticketsupport>
+						</children>
+					 </config>
+				  </children>
+			   </system>
+			</children>
+		</admin>
+		</resources>
+	</acl>	
+</config>

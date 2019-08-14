@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config>
+    <modules>
+        <Imedia_TicketSupport>
+            <active>true</active>
+            <codePool>community</codePool>
+        </Imedia_TicketSupport>
+    </modules>
+</config>
