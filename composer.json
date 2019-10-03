@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/Imedia_TicketSupport",
+    "name": "openmage-module-fostering\/imedia_ticketsupport",
     "type": "magento-module",
-    "license": "OSLv3.0",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "Customer ticket support syytem",
     "authors": [
