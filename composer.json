@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Imedia_TicketSupport",
+    "name": "OpenMageModuleFostering\/Imedia_TicketSupport",
     "type": "magento-module",
     "license": "OSLv3.0",
     "homepage": "",
     "description": "Customer ticket support syytem",
     "authors": [
-    {
-        "name": "iMedia inc.",
-        "email": "info@imediadesigns.org"
-    }
-],
+        {
+            "name": "iMedia inc.",
+            "email": "info@imediadesigns.org"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
